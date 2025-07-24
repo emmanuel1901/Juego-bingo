@@ -1,19 +1,45 @@
-.boton{
+.boton {
     padding: 15px 25px;
     font-size: 24px;
     text-align: center;
-    cursor: pointer;    
-    outline: none ;
+    cursor: pointer;
+    outline: none;
     color: #fff;
-    background-color: #4CAF50 ;
+    background-color: #4CAF50;
     border: none;
-    border-radius: 15px ;
+    border-radius: 15px;
     box-shadow: 0 9px #999;
-}
-.boton.hover{
-    background-color: #3e8e41;
-}
-.boton:disabled{
-    background-color: #cccccc;
-    cursor: not-allowed
-}
+  }
+  
+  .boton:hover{
+      background-color: #3e8e41
+  }
+  
+  .boton:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+  }
+  
+  .cantor{
+    flex: 0 0 300px; /* No crece, no se encoge, tiene un ancho base de 300px */
+    min-width: 280px; /* Ancho mínimo para que no se comprima demasiado */
+    max-width: 350px; /* Ancho máximo, para pantallas grandes */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho */
+    padding-right: 10px; /* Pequeño padding para separar del borde del contenedor */
+  }
+  
+  .tablaCantor{
+      width: 100%; /* Ocupa todo el ancho disponible en .cantor-section */
+      border-collapse: collapse;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      background-color: #fff;
+  }
+  .tablaCantor th, 
+  .tablaCantor td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1em;
+      width: calc(100% / 5); /* Para que las columnas tengan el mismo ancho */  
+  }
